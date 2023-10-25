@@ -27,7 +27,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 
-        <title>Responsive sidebar submenus</title>
+        <title>Dashboard</title>
     </head>
     <body>
         <!-- Header -->
@@ -54,7 +54,7 @@
     
                     <div class="nav__list">
                         <div class="nav__items">
-                            <h3 class="nav__subtitle">Profile</h3>
+                            <h3 class="nav__subtitle">LIST</h3>
     
                             <a href="index.html" class="nav__link active">
                                 <i class='bx bx-home nav__icon' ></i>
@@ -63,12 +63,17 @@
                             
                             <a href="review.html" class="nav__link">
                                 <i class='bx bx-user nav__icon' ></i>
-                                <span class="nav__name">Review</span>
+                                <span class="nav__name">User</span>
                             </a>
 
                             <a href="obat.html" class="nav__link">
                                 <i class='bx bxs-capsule nav__icon' ></i>
                                 <span class="nav__name">Obat</span>
+                            </a>
+
+                            <a href="pesanObat.html" class="nav__link">
+                                <i class='bx bxs-truck fs-5' ></i>
+                                <span class="nav__name">&nbsp;&nbsp;&nbsp;&nbsp;Order</span>
                             </a>
                         </div>
                     </div>
@@ -172,75 +177,203 @@
 
             <!-- Row 1 -->
             <div class="row mb-4">
-                <div class="col-lg-7 d-flex align-items-strech mt-3">
+                <div class="col-lg-8 d-flex align-items-strech mt-3">
                     <div class="card w-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-semibold">Data Obat</h5>
+                            <p class="card-subtitle mb-0">Status Obat List</p>
+                            <div class="table-responsive">
+                                <table class="table align-middle mb-0 text-nowrap">
+                                    <tbody>
+                                        <tr class="mb-2">
+                                            <td class="ps-0">
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <div class="flex-shrink-0">
+                                                        <img src="../assets/images/kelolaobat1.jpg" class="rounded" alt="p1" width="80">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-0 fw-semibold">Loratadine</h6>
+                                                        <span class="fs-6">pantirapihhospital@yahoo.com</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="ps-0">
+                                                <span>Allergy Medication</span>
+                                            </td>
+                                            <td class="ps-0">
+                                                <h6 class="mb-0">$50.00</h6>
+                                            </td>
+                                            <td class="text-end">
+                                                <span class="badge bg-warning text-warning rounded-pill p-2" style="--bs-bg-opacity: .2; display: flex; align-items: center; justify-content: center">
+                                                     <i class='bx bx-xl bxs-circle pr-2' ></i>&nbsp;&nbsp;progress
+                                                </span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="ps-0">
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <div class="flex-shrink-0">
+                                                        <img src="../assets/images/kelolaobat2.jpg" class="rounded" alt="Medicine Product" width="80">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-0 fw-semibold">Acetaminophen</h6>
+                                                        <span class="fs-6">bethesda@hotmail.com</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="ps-0">
+                                                <span>Pain Relief Medicine</span>
+                                            </td>
+                                            <td class="ps-0">
+                                                <h6 class="mb-0">$10.00</h6>
+                                            </td>
+                                            <td class="text-end">
+                                                <span class="badge bg-success text-success rounded-pill p-2" style="--bs-bg-opacity: .2; display: flex; align-items: center; justify-content: center">
+                                                     <i class='bx bx-xl bxs-circle pr-2' ></i>&nbsp;&nbsp;In Stock
+                                                </span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="ps-0">
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <div class="flex-shrink-0">
+                                                        <img src="../assets/images/kelolaobat3.jpg" class="rounded" alt="p1" width="80">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-0 fw-semibold">Irpun Wicaksono</h6>
+                                                        <span class="fs-6">siloamhospital@gmail.com</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="ps-0">
+                                                <span>Allergy Medication</span>
+                                            </td>
+                                            <td class="ps-0">
+                                                <h6 class="mb-0">$750.00</h6>
+                                            </td>
+                                            <td class="text-end">
+                                                <span class="badge bg-danger text-danger rounded-pill p-2" style="--bs-bg-opacity: .2; display: flex; align-items: center; justify-content: center">
+                                                    <i class='bx bx-xl bxs-circle pr-1' ></i>&nbsp;&nbsp;Cancel
+                                                </span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="ps-0">
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <div class="flex-shrink-0">
+                                                        <img src="../assets/images/kelolaobat1.jpg" class="rounded" alt="p1" width="80">
+                                                    </div>
+                                                    <div>
+                                                        <h6 class="mb-0 fw-semibold">Loratadine</h6>
+                                                        <span class="fs-6">pantirapihhospital@yahoo.com</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="ps-0">
+                                                <span>Allergy Medication</span>
+                                            </td>
+                                            <td class="ps-0">
+                                                <h6 class="mb-0">$50.00</h6>
+                                            </td>
+                                            <td class="text-end">
+                                                <span class="badge bg-warning text-warning rounded-pill p-2" style="--bs-bg-opacity: .2; display: flex; align-items: center; justify-content: center">
+                                                     <i class='bx bx-xl bxs-circle pr-2' ></i>&nbsp;&nbsp;progress
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-5 mt-3">
-                    <div class="row">
-
-                        <div class="col-lg-12 pb-4">
-                            <div class="card shadow-sm">
-                                <div class="card-body p-4">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
+                <div class="col-lg-4 d-flex align-items-strech mt-3">
+                    <div class="card w-100">
+                        <div class="image-container" style="max-height: 200px; overflow: hidden;">
+                            <img src="../assets/images/kelolaobat1.jpg" class="card-img img-fluid" alt="nft">
                         </div>
-
-                        <div class="col-lg-12">
-                            <div class="card shadow-sm">
-                                <div class="card-body p-4">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
+                        <div class="p-4 mt-n4 text-center">
+                          <div>
+                            <h6 class="mb-0 fw-semibold mt-2">Obat Top - Loratadine</h6>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between mt-2 pb-3 border-bottom">
+                            <div class="text-start">
+                              <span class="fs-5">Stok Obat</span>
+                              <h6 class="mb-0 fw-semibold">69.320 pcs</h6>
                             </div>
+                            <div class="text-end">
+                              <span class="fs-6">Harga Obat</span>
+                              <h6 class="mb-0 fw-semibold">Rp 700.000</h6>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center gap-3 pt-3">
+                            <div class="round bg-light d-flex align-items-center justify-content-center rounded-circle">
+                                <i class='bx bxs-dollar-circle'></i>
+                            </div>
+                            <div>
+                              <h6 class="mb-0 fw-semibold">31224 Transaksi</h6>
+                            </div>
+                            <div class="ms-auto text-end">
+                              <span class="text-danger">-6.8%</span>
+                            </div>
+                          </div>
                         </div>
-                    </div>
+                      </div>
                 </div>  
+
             </div>
 
             <!-- Row 2 -->
             <div class="row mb-4">
-                <div class="col-lg-5 mt-3">
-                    <div class="row ">
-
-                        <div class="col-lg-12 pb-4">
-                            <div class="card shadow-sm">
-                                <div class="card-body p-4">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12">
-                            <div class="card shadow-sm">
-                                <div class="card-body p-4">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="col-lg-7 d-flex align-items-strech mt-3">
+                <div class="col-lg-12 d-flex align-items-strech mt-3">
                     <div class="card w-100 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-semibold">Data User</h5>
+                            <p class="card-subtitle mb-0">User Account List</p>
+                            <table class="datatables-users table dataTable no-footer dtr-column mt-4" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info">
+                                <thead class="border-top">
+                                  <tr>
+                                    <th class="control sorting_disabled dtr-hidden" rowspan="1" colspan="1" style="width: 0px; display: none;" aria-label=""></th>
+                                    <th>User</th>
+                                    <th>Id</th>
+                                    <th>Email</th>
+                                    <th>Nomor Telepon</th>
+                                    <th>Tanggal Bergabung</th>
+                                    <th>Status</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr role="row">
+                                      <td>Alfred Matthew</td>
+                                      <td>123</td>
+                                      <td>mathew.alfred12@gmail.com</td>
+                                      <td>08993694969</td>
+                                      <td>21-02-2312</td>
+                                      <td>Active</td>
+                                  </tr>
+                                  <tr role="row">
+                                      <td>Robert Brown</td>
+                                      <td>987</td>
+                                      <td>robertbrown@gmail.com</td>
+                                      <td>1237894560</td>
+                                      <td>03-04-2022</td>
+                                      <td>Active</td>
+                                  </tr>
+                                  <tr role="row">
+                                      <td>Lisa Davis</td>
+                                      <td>345</td>
+                                      <td>lisadavis@gmail.com</td>
+                                      <td>9995558888</td>
+                                      <td>19-11-2020</td>
+                                      <td>Inactive</td>
+                                  </tr>                
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div> 
@@ -262,22 +395,22 @@
 
         <script>
         var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items:6,
-            loop:true,
-            margin:10,
-            autoplay:true,
-            autoplayTimeout:3000,
-            smartSpeed: 2000,
-            autoplayHoverPause:true,
-            dots: false,
-        });
-        $('.play').on('click',function(){
-            owl.trigger('play.owl.autoplay',[3000])
+                owl.owlCarousel({
+                    items:6,
+                    loop:true,
+                    margin:10,
+                    autoplay:true,
+                    autoplayTimeout:3000,
+                    smartSpeed: 2000,
+                    autoplayHoverPause:true,
+                    dots: false,
+                });
+                $('.play').on('click',function(){
+                    owl.trigger('play.owl.autoplay',[3000])
+                })
+                $('.stop').on('click',function(){
+                    owl.trigger('stop.owl.autoplay')
         })
-        $('.stop').on('click',function(){
-            owl.trigger('stop.owl.autoplay')
-})
         </script>
     </body>
 </html>

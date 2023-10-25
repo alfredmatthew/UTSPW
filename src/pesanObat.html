@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+        <!-- Box Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/style.css">
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- Owl Carousel JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+        <title>Kelola User</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="header__container">
+                <img src="../assets/images/apple-logo-transparent.png" alt="" class="header__img">
+
+                <a href="#" class="header__logo">Admin Dashboard</a>
+
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="#" class="nav__link nav__logo">
+                        <i class='bx bx-plus-medical nav__icon'></i>
+                        <span class="nav__logo-name">Terkini</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">LIST</h3>
+    
+                            <a href="index.html" class="nav__link">
+                                <i class='bx bx-home nav__icon' ></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                            
+                            <a href="review.html" class="nav__link">
+                                <i class='bx bx-user nav__icon' ></i>
+                                <span class="nav__name">User</span>
+                            </a>
+
+                            <a href="obat.html" class="nav__link">
+                                <i class='bx bxs-capsule nav__icon' ></i>
+                                <span class="nav__name">Status</span>
+                            </a>
+
+                            <a href="pesanObat.html" class="nav__link active">
+                                <i class='bx bxs-truck' ></i>
+                                <span class="nav__name">&nbsp;&nbsp;&nbsp;&nbsp;Order</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link nav__logout">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main -->
+        <main class="mt-3">
+            <div class="container-fluid p-0">
+                <div class="card bg-secondary overflow-hidden" style="--bs-bg-opacity: .4;">
+                    <div class="card-body px-4 py-0">
+                      <div class="row align-items-center">
+                        <div class="col-9">
+                          <h4 class="fw-semibold mb-8">Pesan Obat</h4>
+                          <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a class="text-muted text-decoration-none" href="./index.html">Dashboard</a></li>
+                              <li class="breadcrumb-item" aria-current="page">User</li>
+                            </ol>
+                          </nav>
+                        </div>
+                        <div class="col-3 p-0">
+                          <div class="text-center mb-n5">  
+                            <img src="../assets/images/pesanObat.png" alt="" class="img-fluid w-50 m-2 p-4">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Add Obat -->
+            <div class="card card-body mt-4">
+              <div class="row">
+                  <div class="col-md-4 col-xl-3">
+                      <form class="position-relative">
+                          <input type="text" class="form-control product-search ps-5" id="input-search" placeholder="Search Obat">
+                          <i class='bx bx-search position-absolute top-50 start-0 translate-middle-y fs-6 text-dark ms-3'></i>
+                      </form>
+                  </div>
+                  <div class="col-md-8 col-xl-9 text-end d-flex justify-content-md-end justify-content-center mt-3 mt-md-0">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#pesanModal">
+                      <i class='bx bxs-add-to-queue ' ></i>&nbsp;&nbsp; Add Medicine
+                    </button>
+                  </div>
+              </div>
+            </div>
+
+            <div class="container-fluid p-0 mt-4">
+              <div class="row">
+
+                <div class="col-lg-3 d-flex align-items-stretch mb-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <div class="head-text pb-4">
+                              <span class="label"></span>
+                              <div class="text-content">
+                                  <span class="fs-5 fw-bold">Loratadine</span>
+                                  <h6 class="mb-0 fw-normal">69.320 pcs</h6>
+                              </div>
+                          </div>
+                          <div class="desc-text pb-4" style="margin-left: 10px;">
+                              <p class="card-text">Loratadine adalah obat antihistamin yang digunakan untuk meredakan gejala alergi seperti pilek, bersin, gatal-gatal, mata berair, dan ruam pada kulit.</p>
+                          </div>
+                          <div class="logo-text">
+                            <div class="d-flex justify-content-between">
+                              <div class="icon-left" style="margin-left: 10px;">
+                                <a href="#">
+                                  <i class='bx bx-star fs-5' ></i>
+                                </a>
+                                <a href="#" style="margin-left: 10px;">
+                                  <i class='bx bx-trash fs-5' style="color: red;"></i>
+                                </a>
+                              </div>
+                              <div class="icon-right">
+                                <a href="#">
+                                  <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 d-flex align-items-stretch mb-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <div class="head-text pb-4">
+                              <span class="label1"></span>
+                              <div class="text-content">
+                                  <span class="fs-5 fw-bold">Loratadine</span>
+                                  <h6 class="mb-0 fw-normal">69.320 pcs</h6>
+                              </div>
+                          </div>
+                          <div class="desc-text pb-4" style="margin-left: 10px;">
+                              <p class="card-text">Loratadine adalah obat antihistamin yang digunakan untuk meredakan gejala alergi seperti pilek, bersin, gatal-gatal, mata berair, dan ruam pada kulit.</p>
+                          </div>
+                          <div class="logo-text">
+                            <div class="d-flex justify-content-between">
+                              <div class="icon-left" style="margin-left: 10px;">
+                                <a href="#">
+                                  <i class='bx bx-star fs-5' ></i>
+                                </a>
+                                <a href="#" style="margin-left: 10px;">
+                                  <i class='bx bx-trash fs-5' style="color: red;"></i>
+                                </a>
+                              </div>
+                              <div class="icon-right">
+                                <a href="#">
+                                  <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 d-flex align-items-stretch mb-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <div class="head-text pb-4">
+                              <span class="label2"></span>
+                              <div class="text-content">
+                                  <span class="fs-5 fw-bold">Loratadine</span>
+                                  <h6 class="mb-0 fw-normal">69.320 pcs</h6>
+                              </div>
+                          </div>
+                          <div class="desc-text pb-4" style="margin-left: 10px;">
+                              <p class="card-text">Loratadine adalah obat antihistamin yang digunakan untuk meredakan gejala alergi seperti pilek, bersin, gatal-gatal, mata berair, dan ruam pada kulit.</p>
+                          </div>
+                          <div class="logo-text">
+                            <div class="d-flex justify-content-between">
+                              <div class="icon-left" style="margin-left: 10px;">
+                                <a href="#">
+                                  <i class='bx bx-star fs-5' ></i>
+                                </a>
+                                <a href="#" style="margin-left: 10px;">
+                                  <i class='bx bx-trash fs-5' style="color: red;"></i>
+                                </a>
+                              </div>
+                              <div class="icon-right">
+                                <a href="#">
+                                  <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 d-flex align-items-stretch mb-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <div class="head-text pb-4">
+                              <span class="label3"></span>
+                              <div class="text-content">
+                                  <span class="fs-5 fw-bold">Loratadine</span>
+                                  <h6 class="mb-0 fw-normal">69.320 pcs</h6>
+                              </div>
+                          </div>
+                          <div class="desc-text pb-4" style="margin-left: 10px;">
+                              <p class="card-text">Loratadine adalah obat antihistamin yang digunakan untuk meredakan gejala alergi seperti pilek, bersin, gatal-gatal, mata berair, dan ruam pada kulit.</p>
+                          </div>
+                          <div class="logo-text">
+                            <div class="d-flex justify-content-between">
+                              <div class="icon-left" style="margin-left: 10px;">
+                                <a href="#">
+                                  <i class='bx bx-star fs-5' ></i>
+                                </a>
+                                <a href="#" style="margin-left: 10px;">
+                                  <i class='bx bx-trash fs-5' style="color: red;"></i>
+                                </a>
+                              </div>
+                              <div class="icon-right">
+                                <a href="#">
+                                  <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-3 d-flex align-items-stretch mb-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <div class="head-text pb-4">
+                              <span class="label"></span>
+                              <div class="text-content">
+                                  <span class="fs-5 fw-bold">Loratadine</span>
+                                  <h6 class="mb-0 fw-normal">69.320 pcs</h6>
+                              </div>
+                          </div>
+                          <div class="desc-text pb-4" style="margin-left: 10px;">
+                              <p class="card-text">Loratadine adalah obat antihistamin yang digunakan untuk meredakan gejala alergi seperti pilek, bersin, gatal-gatal, mata berair, dan ruam pada kulit.</p>
+                          </div>
+                          <div class="logo-text">
+                            <div class="d-flex justify-content-between">
+                              <div class="icon-left" style="margin-left: 10px;">
+                                <a href="#">
+                                  <i class='bx bx-star fs-5' ></i>
+                                </a>
+                                <a href="#" style="margin-left: 10px;">
+                                  <i class='bx bx-trash fs-5' style="color: red;"></i>
+                                </a>
+                              </div>
+                              <div class="icon-right">
+                                <a href="#">
+                                  <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 d-flex align-items-stretch mb-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <div class="head-text pb-4">
+                              <span class="label1"></span>
+                              <div class="text-content">
+                                  <span class="fs-5 fw-bold">Loratadine</span>
+                                  <h6 class="mb-0 fw-normal">69.320 pcs</h6>
+                              </div>
+                          </div>
+                          <div class="desc-text pb-4" style="margin-left: 10px;">
+                              <p class="card-text">Loratadine adalah obat antihistamin yang digunakan untuk meredakan gejala alergi seperti pilek, bersin, gatal-gatal, mata berair, dan ruam pada kulit.</p>
+                          </div>
+                          <div class="logo-text">
+                            <div class="d-flex justify-content-between">
+                              <div class="icon-left" style="margin-left: 10px;">
+                                <a href="#">
+                                  <i class='bx bx-star fs-5' ></i>
+                                </a>
+                                <a href="#" style="margin-left: 10px;">
+                                  <i class='bx bx-trash fs-5' style="color: red;"></i>
+                                </a>
+                              </div>
+                              <div class="icon-right">
+                                <a href="#">
+                                  <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 d-flex align-items-stretch mb-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <div class="head-text pb-4">
+                              <span class="label2"></span>
+                              <div class="text-content">
+                                  <span class="fs-5 fw-bold">Loratadine</span>
+                                  <h6 class="mb-0 fw-normal">69.320 pcs</h6>
+                              </div>
+                          </div>
+                          <div class="desc-text pb-4" style="margin-left: 10px;">
+                              <p class="card-text">Loratadine adalah obat antihistamin yang digunakan untuk meredakan gejala alergi seperti pilek, bersin, gatal-gatal, mata berair, dan ruam pada kulit.</p>
+                          </div>
+                          <div class="logo-text">
+                            <div class="d-flex justify-content-between">
+                              <div class="icon-left" style="margin-left: 10px;">
+                                <a href="#">
+                                  <i class='bx bx-star fs-5' ></i>
+                                </a>
+                                <a href="#" style="margin-left: 10px;">
+                                  <i class='bx bx-trash fs-5' style="color: red;"></i>
+                                </a>
+                              </div>
+                              <div class="icon-right">
+                                <a href="#">
+                                  <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 d-flex align-items-stretch mb-4">
+                  <div class="card">
+                      <div class="card-body">
+                          <div class="head-text pb-4">
+                              <span class="label3"></span>
+                              <div class="text-content">
+                                  <span class="fs-5 fw-bold">Loratadine</span>
+                                  <h6 class="mb-0 fw-normal">69.320 pcs</h6>
+                              </div>
+                          </div>
+                          <div class="desc-text pb-4" style="margin-left: 10px;">
+                              <p class="card-text">Loratadine adalah obat antihistamin yang digunakan untuk meredakan gejala alergi seperti pilek, bersin, gatal-gatal, mata berair, dan ruam pada kulit.</p>
+                          </div>
+                          <div class="logo-text">
+                            <div class="d-flex justify-content-between">
+                              <div class="icon-left" style="margin-left: 10px;">
+                                <a href="#">
+                                  <i class='bx bx-star fs-5' ></i>
+                                </a>
+                                <a href="#" style="margin-left: 10px;">
+                                  <i class='bx bx-trash fs-5' style="color: red;"></i>
+                                </a>
+                              </div>
+                              <div class="icon-right">
+                                <a href="#">
+                                  <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                
+            </div>
+
+              
+        </main>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="pesanModal" tabindex="-1" role="dialog" aria-labelledby="pesanModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="pesanModalLabel">New message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--========== Script ==========-->
+        <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+       
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

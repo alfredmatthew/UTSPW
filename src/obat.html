@@ -50,21 +50,26 @@
     
                     <div class="nav__list">
                         <div class="nav__items">
-                            <h3 class="nav__subtitle">Profile</h3>
+                            <h3 class="nav__subtitle">LIST</h3>
     
-                            <a href="index.html" class="nav__link active">
+                            <a href="index.html" class="nav__link">
                                 <i class='bx bx-home nav__icon' ></i>
                                 <span class="nav__name">Home</span>
                             </a>
                             
                             <a href="review.html" class="nav__link">
                                 <i class='bx bx-user nav__icon' ></i>
-                                <span class="nav__name">Review</span>
+                                <span class="nav__name">User</span>
                             </a>
 
-                            <a href="obat.html" class="nav__link">
+                            <a href="obat.html" class="nav__link active">
                                 <i class='bx bxs-capsule nav__icon' ></i>
                                 <span class="nav__name">Obat</span>
+                            </a>
+
+                            <a href="pesanObat.html" class="nav__link">
+                                <i class='bx bxs-truck fs-5' ></i>
+                                <span class="nav__name">&nbsp;&nbsp;&nbsp;&nbsp;Order</span>
                             </a>
                         </div>
                     </div>
@@ -107,17 +112,37 @@
             <!-- Add Obat -->
             <div class="card card-body mt-4">
                 <div class="row">
-                    <div class="col-md-4 col-xl-3">
-                        <form class="position-relative">
-                            <input type="text" class="form-control product-search ps-5" id="input-search" placeholder="Search Obat">
-                            <i class='bx bx-search position-absolute top-50 start-0 translate-middle-y fs-6 text-dark ms-3'></i>
-                        </form>
-                    </div>
-                    <div class="col-md-8 col-xl-9 text-end d-flex justify-content-md-end justify-content-center mt-3 mt-md-0">
-                        <a href="#" id="btn-add-obat" class="btn btn-success d-flex align-items-center" >
-                            <i class="ti ti-users text-white me-1 fs-5"></i> Add Medicine
-                        </a>
-                    </div>
+     
+                        <div class="d-flex justify-content-between align-items-center row pb-2 gap-3 gap-md-0">
+                            <div class="col-md-4 user_role">
+                              <select class="form-select">
+                                <option value="">Select Role</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Author">Author</option>
+                                <option value="Editor">Editor</option>
+                                <option value="Maintainer">Maintainer</option>
+                                <option value="Subscriber">Subscriber</option>
+                              </select>
+                            </div>
+                            <div class="col-md-4">
+                              <select class="form-select">
+                                <option value="">Select Plan</option>
+                                <option value="Basic">Basic</option>
+                                <option value="Company">Company</option>
+                                <option value="Enterprise">Enterprise</option>
+                                <option value="Team">Team</option>
+                              </select>
+                            </div>
+                            <div class="col-md-4 user_status">
+                              <select class="form-select">
+                                <option value="">Select Status</option>
+                                <option value="Pending" class="text-capitalize">Pending</option>
+                                <option value="Active" class="text-capitalize">Active</option>
+                                <option value="Inactive" class="text-capitalize">Inactive</option>
+                              </select>
+                            </div>
+                          </div>
+                   
                 </div>
             </div>
 

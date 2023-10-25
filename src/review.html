@@ -23,7 +23,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 
-        <title>Kelola Obat</title>
+        <title>Kelola User</title>
     </head>
     <body>
         <!-- Header -->
@@ -50,22 +50,27 @@
     
                     <div class="nav__list">
                         <div class="nav__items">
-                            <h3 class="nav__subtitle">Profile</h3>
+                            <h3 class="nav__subtitle">LIST</h3>
     
-                            <a href="index.html" class="nav__link active">
+                            <a href="index.html" class="nav__link">
                                 <i class='bx bx-home nav__icon' ></i>
                                 <span class="nav__name">Home</span>
                             </a>
                             
-                            <a href="review.html" class="nav__link">
+                            <a href="review.html" class="nav__link active">
                                 <i class='bx bx-user nav__icon' ></i>
-                                <span class="nav__name">Review</span>
+                                <span class="nav__name">User</span>
                             </a>
 
                             <a href="obat.html" class="nav__link">
                                 <i class='bx bxs-capsule nav__icon' ></i>
                                 <span class="nav__name">Obat</span>
                             </a>
+
+                            <a href="pesanObat.html" class="nav__link">
+                              <i class='bx bxs-truck fs-5' ></i>
+                              <span class="nav__name">&nbsp;&nbsp;&nbsp;&nbsp;Order</span>
+                          </a>
                         </div>
                     </div>
                 </div>
@@ -84,11 +89,11 @@
                     <div class="card-body px-4 py-0">
                       <div class="row align-items-center">
                         <div class="col-9">
-                          <h4 class="fw-semibold mb-8">Review Obat</h4>
+                          <h4 class="fw-semibold mb-8">List User Account</h4>
                           <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                               <li class="breadcrumb-item"><a class="text-muted text-decoration-none" href="./index.html">Dashboard</a></li>
-                              <li class="breadcrumb-item" aria-current="page">Review</li>
+                              <li class="breadcrumb-item" aria-current="page">User</li>
                             </ol>
                           </nav>
                         </div>
@@ -102,8 +107,190 @@
                   </div>
                 </div>
             </div>
-        </main>
 
+            <div class="card mt-4">
+                <div class="card-header p-4">
+                  <h5 class="card-title mb-3">Search Filter</h5>
+                  <div class="d-flex justify-content-between align-items-center row pb-2 gap-3 gap-md-0">
+                    <div class="col-md-4 user_role">
+                      <select class="form-select">
+                        <option value="">Select Role</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Author">Author</option>
+                        <option value="Editor">Editor</option>
+                        <option value="Maintainer">Maintainer</option>
+                        <option value="Subscriber">Subscriber</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <select class="form-select">
+                        <option value="">Select Plan</option>
+                        <option value="Basic">Basic</option>
+                        <option value="Company">Company</option>
+                        <option value="Enterprise">Enterprise</option>
+                        <option value="Team">Team</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 user_status">
+                      <select class="form-select">
+                        <option value="">Select Status</option>
+                        <option value="Pending" class="text-capitalize">Pending</option>
+                        <option value="Active" class="text-capitalize">Active</option>
+                        <option value="Inactive" class="text-capitalize">Inactive</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-datatable table-responsive m-4">
+                  <div class="dataTables_wrapper no-footer">
+                    <div class="row md-2">
+                      <div class="col-md-2">
+                        <div class="md-3">
+                          <div class="dataTables_length" id="DataTables_Table_0_length">
+                            <label>
+                              <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-select">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                              </select>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="dt-action-buttons d-flex align-items-center justify-content-end  mb-3 mb-md-0">
+                          <div>
+                            <label>
+                              <input type="search" class="form-control" placeholder="Search.."  style="width: 359px;">
+                            </label>
+                          </div>
+                          <div>
+                            <button class="dt-button add-new btn btn-primary ms-4" tabindex="0" aria-controls="DataTables_Table_0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasAddUser">
+                              <span><i class='bx bx-plus'></i></i><span class="d-none d-sm-inline-block">&nbsp;&nbsp;Add New User</span>
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <table class="datatables-users table dataTable no-footer dtr-column mt-4" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info">
+                      <thead class="border-top">
+                        <tr>
+                          <th class="control sorting_disabled dtr-hidden" rowspan="1" colspan="1" style="width: 0px; display: none;" aria-label=""></th>
+                          <th style="width: 359px;">User</th>
+                          <th>Id</th>
+                          <th>Email</th>
+                          <th>Nomor Telepon</th>
+                          <th>Tanggal Bergabung</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr role="row">
+                            <td>Alfred Matthew</td>
+                            <td>123</td>
+                            <td>mathew.alfred12@gmail.com</td>
+                            <td>08993694969</td>
+                            <td>21-02-2312</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr role="row">
+                            <td>Robert Brown</td>
+                            <td>987</td>
+                            <td>robertbrown@gmail.com</td>
+                            <td>1237894560</td>
+                            <td>03-04-2022</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr role="row">
+                            <td>Lisa Davis</td>
+                            <td>345</td>
+                            <td>lisadavis@gmail.com</td>
+                            <td>9995558888</td>
+                            <td>19-11-2020</td>
+                            <td>Inactive</td>
+                        </tr>
+                        <tr role="row">
+                            <td>Michael Wilson</td>
+                            <td>654</td>
+                            <td>mwilson@gmail.com</td>
+                            <td>7772223333</td>
+                            <td>10-06-2018</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr role="row">
+                            <td>Susan Lee</td>
+                            <td>234</td>
+                            <td>susanlee@gmail.com</td>
+                            <td>1112223333</td>
+                            <td>25-09-2021</td>
+                            <td>Inactive</td>
+                        </tr>
+                        <tr role="row">
+                            <td>David Clark</td>
+                            <td>876</td>
+                            <td>davidclark@gmail.com</td>
+                            <td>4445556666</td>
+                            <td>08-03-2019</td>
+                            <td>Active</td>
+                        </tr>                      
+                        <tr role="row">
+                            <td>Alfred Matthew</td>
+                            <td>123</td>
+                            <td>mathew.alfred12@gmail.com</td>
+                            <td>08993694969</td>
+                            <td>21-02-2312</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr role="row">
+                          <td>Alfred Matthew</td>
+                          <td>123</td>
+                          <td>mathew.alfred12@gmail.com</td>
+                          <td>08993694969</td>
+                          <td>21-02-2312</td>
+                          <td>Active</td>
+                        </tr>
+                        <tr role="row">
+                            <td>Alfred Matthew</td>
+                            <td>123</td>
+                            <td>mathew.alfred12@gmail.com</td>
+                            <td>08993694969</td>
+                            <td>21-02-2312</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr role="row">
+                          <td>Alfred Matthew</td>
+                          <td>123</td>
+                          <td>mathew.alfred12@gmail.com</td>
+                          <td>08993694969</td>
+                          <td>21-02-2312</td>
+                          <td>Active</td>
+                        </tr>
+                        <tr role="row">
+                            <td>Alfred Matthew</td>
+                            <td>123</td>
+                            <td>mathew.alfred12@gmail.com</td>
+                            <td>08993694969</td>
+                            <td>21-02-2312</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr role="row">
+                          <td>Alfred Matthew</td>
+                          <td>123</td>
+                          <td>mathew.alfred12@gmail.com</td>
+                          <td>08993694969</td>
+                          <td>21-02-2312</td>
+                          <td>Active</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              
+        </main>
+        
         <!--========== Script ==========-->
         <script src="assets/js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
