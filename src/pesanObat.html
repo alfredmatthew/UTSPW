@@ -123,7 +123,7 @@
                       </form>
                   </div>
                   <div class="col-md-8 col-xl-9 text-end d-flex justify-content-md-end justify-content-center mt-3 mt-md-0">
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#pesanModal">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pesanModal">
                       <i class='bx bxs-add-to-queue ' ></i>&nbsp;&nbsp; Add Medicine
                     </button>
                   </div>
@@ -414,20 +414,27 @@
         <div class="modal fade" id="pesanModal" tabindex="-1" role="dialog" aria-labelledby="pesanModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="pesanModalLabel">New message</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+              <div class="modal-header bg-primary">
+                <h5 class="modal-title text-white" id="pesanModalLabel">New message</h5>
+                <button type="button" data-dismiss="modal" class="btn-close fs-6" aria-label="Close"></button>
               </div>
+            
               <div class="modal-body">
                 <form>
                   <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                    <label for="obat-name" class="col-form-label">Nama Obat:</label>
+                    <input type="text" class="form-control" id="obat-name">
                   </div>
                   <div class="form-group">
-                    <label for="message-text" class="col-form-label">Message:</label>
+                    <label for="jumlah-name" class="col-form-label">Jumlah Obat:</label>
+                    <input type="text" class="form-control" id="jumlah-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="jumlah-name" class="col-form-label">Status Obat:</label>
+                    <input type="text" class="form-control" id="jumlah-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Deskripsi Obat:</label>
                     <textarea class="form-control" id="message-text"></textarea>
                   </div>
                 </form>

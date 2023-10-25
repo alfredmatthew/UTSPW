@@ -89,7 +89,570 @@
 
         <!-- Main -->
         <main class="mt-3">
+            <div class="card mb-4">
 
+                <div class="card-body">
+                    <div class="row">
+
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="d-flex justify-content-between align-items-center border-end  pb-sm-0">
+                            <div>
+                                <h4 class="mb-2">12,689</h4>
+                                <p class="mb-0 fw-medium">Completed</p>
+                            </div>
+                            <span class="bg-primary p-2 rounded me-5">
+                                <span class="avatar-initial bg-label-secondary rounded" style="--bs-bg-opacity: .2;">
+                                    <i class='bx bxs-info-circle fs-4 text-white'></i>
+                                </span>
+                            </span>
+                        </div>
+                        <hr class="d-none d-sm-block d-lg-none">
+                      </div>
+                      
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="d-flex justify-content-between align-items-center border-end pb-sm-0">
+                            <div>
+                                <h4 class="mb-2">12,689</h4>
+                                <p class="mb-0 fw-medium">Completed</p>
+                            </div>
+                            <span class="bg-primary p-2 rounded me-5">
+                                <span class="avatar-initial bg-label-secondary rounded" style="--bs-bg-opacity: .2;">
+                                    <i class='bx bxs-info-circle fs-4 text-white'></i>
+                                </span>
+                            </span>
+                        </div>
+                        <hr class="d-none d-sm-block d-lg-none">
+                      </div>
+
+
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="d-flex justify-content-between align-items-center border-end pb-sm-0">
+                            <div>
+                                <h4 class="mb-2">12,689</h4>
+                                <p class="mb-0 fw-medium">Completed</p>
+                            </div>
+                            <span class="bg-primary p-2 rounded me-5">
+                                <span class="avatar-initial bg-label-secondary rounded" style="--bs-bg-opacity: .2;">
+                                    <i class='bx bxs-info-circle fs-4 text-white'></i>
+                                </span>
+                            </span>
+                        </div>
+                        <hr class="d-none d-sm-block d-lg-none">
+                      </div>
+
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="d-flex justify-content-between align-items-center  pb-sm-0">
+                          <div>
+                            <h4 class="mb-2">32</h4>
+                            <p class="mb-0 fw-medium">Failed</p>
+                          </div>
+                          <span class="bg-primary p-2 rounded me-5">
+                            <span class="avatar-initial bg-label-secondary rounded" style="--bs-bg-opacity: .2;">
+                                <i class='bx bxs-info-circle fs-4 text-white'></i>
+                            </span>
+                        </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="card mt-4">
+                <div class="card-header p-4">
+                  <h5 class="card-title mb-3">Search Filter</h5>
+                  <div class="d-flex justify-content-between align-items-center row pb-2 gap-3 gap-md-0">
+                    <div class="col-md-6 user_role">
+                      <select class="form-select">
+                        <option value="">Select Role</option>
+                        <option value="Admin">Admin</option>
+                        <option value="User">User</option>
+                      </select>
+                    </div>
+ 
+                    <div class="col-md-6 user_status">
+                      <select class="form-select">
+                        <option value="">Select Status</option>
+                        <option value="Active" class="text-capitalize">Active</option>
+                        <option value="Inactive" class="text-capitalize">Inactive</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-datatable table-responsive m-4">
+                  <div class="dataTables_wrapper no-footer">
+                    <div class="row md-2">
+                      <div class="col-md-2">
+                        <div class="md-3">
+                          <div class="dataTables_length" id="DataTables_Table_0_length">
+                            <label>
+                              <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-select">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                              </select>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-10">
+                        <div class="dt-action-buttons d-flex  justify-content-end">
+                          <div class="mr-2">
+                            <label>
+                              <form class="position-relative">
+                                <input type="text" class="form-control product-search ps-5" id="input-search" placeholder="Search User" style="width: 500px;margin-right: 20px;">
+                                <i class='bx bx-search position-absolute top-50 start-0 translate-middle-y fs-6 text-dark ms-3'></i>
+                              </form>                              
+                            </label>
+                          </div>
+                          <div>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addUser">
+                              <i class='bx bxs-add-to-queue ' ></i>&nbsp;&nbsp; Add User
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <table class="datatables-users table dataTable no-footer dtr-column mt-4" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info">
+                      <thead class="border-top">
+                        <tr>
+                          <th class="control sorting_disabled dtr-hidden" rowspan="1" colspan="1" style="width: 0px; display: none;" aria-label=""></th>
+                          <th style="width: 359px;" class="text-center">User</th>
+                          <th class="text-center">Id</th>
+                          <th style="width: 259px;" class="text-center">Roles</th>
+                          <th class="text-center">Nomor Telepon</th>
+                          <th class="text-center">Tanggal Bergabung</th>
+                          <th class="text-center">Status</th>
+                          <th class="text-center">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr role="row" class="text-center">
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center user-name">
+                              <div class="avatar-wrapper">
+                                <div class="avatar me-3">
+                                  <img src="../assets/images/dog.jpg" alt="Avatar" class="rounded-circles">
+                                </div>
+                              </div>
+                              <div class="d-flex flex-column text-center">
+                                <a href="#" class="text-body text-truncate">
+                                  <span class="fw-medium text">Michael Anderson</span>
+                                </a>
+                                <small class="text-muted">michael.anderson@example.com</small>
+                              </div>
+                            </div>
+                          </td>
+                          
+                          <td>123</td>
+                          <td class="text-center">
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                              <i class="bx bxs-face-mask" style="color: white; padding: 5px; background-color: #9e388d; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;"></i>
+                              <span style="margin-left: 10px;">Admin</span>
+                            </div>
+                          </td>                          
+                          <td>08993694969</td>
+                          <td>21-02-2312</td>
+                          <td>
+                            <span class="badge bg-success" style="color: white;">Active</span>
+                          </td>
+                          <td>
+                            <a href="#">
+                              <i class='bx bx-star fs-5' ></i>
+                            </a>
+                            <a href="#" style="margin-left: 10px;">
+                              <i class='bx bx-trash fs-5'></i>
+                            </a>
+                            <a href="#" style="margin-left: 10px;">
+                              <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr role="row" class="text-center">
+                            <td>
+                              <div class="d-flex justify-content-start align-items-center user-name">
+                                <div class="avatar-wrapper">
+                                  <div class="avatar me-3">
+                                    <img src="../assets/images/dog.jpg" alt="Avatar" class="rounded-circles">
+                                  </div>
+                                </div>
+                                <div class="d-flex flex-column text-center">
+                                  <a href="#" class="text-body text-truncate">
+                                    <span class="fw-medium">Emma Martin</span>
+                                  </a>
+                                  <small class="text-muted">emma.martin@example.com</small>
+                                </div>
+                              </div>
+                            </td>
+                          
+                            <td>123</td>
+                            <td class="text-center">
+                              <div style="display: flex; align-items: center; justify-content: center;">
+                                <i class="bx bxs-face-mask" style="color: white; padding: 5px; background-color: #9e388d; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;"></i>
+                                <span style="margin-left: 10px;">Admin</span>
+                              </div>
+                            </td>  
+                            <td>08993694969</td>
+                            <td>21-02-2312</td>
+                            <td>
+                              <span class="badge bg-success" style="color: white;">Active</span>
+                            </td>
+                            <td>
+                              <a href="#">
+                                <i class='bx bx-star fs-5' ></i>
+                              </a>
+                              <a href="#" style="margin-left: 10px;">
+                                <i class='bx bx-trash fs-5'></i>
+                              </a>
+                              <a href="#" style="margin-left: 10px;">
+                                <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                              </a>
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="text-center">
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center user-name">
+                              <div class = "avatar-wrapper">
+                                <div class="avatar me-3">
+                                  <img src="../assets/images/dog.jpg" alt="Avatar" class="rounded-circles">
+                                </div>
+                              </div>
+                              <div class="d-flex flex-column text-center">
+                                <a href="#" class="text-body text-truncate">
+                                  <span class="fw-medium">James Brown</span>
+                                </a>
+                                <small class="text-muted">james.brown@example.com</small>
+                              </div>
+                            </div>
+                          </td>
+                          
+                          <td>123</td>
+                          <td class="text-center">
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                              <i class="bx bx-face" style="color: white; padding: 5px; background-color: #389e88; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;"></i>
+                              <span style="margin-left: 10px;">User</span>
+                            </div>
+                          </td>  
+                          <td>08993694969</td>
+                          <td>21-02-2312</td>
+                          <td>
+                            <span class="badge bg-success" style="color: white;">Active</span>
+                          </td>
+                          <td>
+                            <a href="#">
+                              <i class='bx bx-star fs-5' ></i>
+                            </a>
+                            <a href="#" style="margin-left: 10px;">
+                              <i class='bx bx-trash fs-5'></i>
+                            </a>
+                            <a href="#" style="margin-left: 10px;">
+                              <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr role="row" class="text-center">
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center user-name">
+                              <div class="avatar-wrapper">
+                                <div class="avatar me-3 ">
+                                  <img src="../assets/images/dog.jpg" alt="Avatar" class="rounded-circles">
+                                </div>
+                              </div>
+                              <div class="d-flex flex-column text-center">
+                                <a href="#" class="text-body text-truncate">
+                                  <span class="fw-medium">Olivia Taylor</span>
+                                </a>
+                                <small class="text-muted">olivia.taylor@example.com</small>
+                              </div>
+                            </div>
+                          </td>
+                          
+                            <td>123</td>
+                            <td class="text-center">
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                              <i class="bx bxs-face-mask" style="color: white; padding: 5px; background-color: #9e388d; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;"></i>
+                              <span style="margin-left: 10px;">Admin</span>
+                            </div>
+                          </td>  
+                            <td>08993694969</td>
+                            <td>21-02-2312</td>
+                            <td>
+                              <span class="badge bg-danger" style="color: white;">Inactive</span>
+                            </td>
+                            <td>
+                              <a href="#">
+                                <i class='bx bx-star fs-5' ></i>
+                              </a>
+                              <a href="#" style="margin-left: 10px;">
+                                <i class='bx bx-trash fs-5'></i>
+                              </a>
+                              <a href="#" style="margin-left: 10px;">
+                                <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                              </a>
+                            </td>
+                        </tr>
+                        
+                        <tr role="row" class="text-center">
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center user-name">
+                              <div class="avatar-wrapper">
+                                <div class="avatar me-3">
+                                  <img src="../assets/images/dog.jpg" alt="Avatar" class="rounded-circles">
+                                </div>
+                              </div>
+                              <div class="d-flex flex-column">
+                                <a href="#" class="text-body text-truncate">
+                                  <span class="fw-medium">William Harris</span>
+                                </a>
+                                <small class = "text-muted">william.harris@example.com</small>
+                              </div>
+                            </div>
+                          </td>
+                          
+                          <td>123</td>
+                          <td class="text-center">
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                              <i class="bx bxs-face-mask" style="color: white; padding: 5px; background-color: #9e388d; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;"></i>
+                              <span style="margin-left: 10px;">Admin</span>
+                            </div>
+                          </td>  
+                          <td>08993694969</td>
+                          <td>21-02-2312</td>
+                          <td>
+                            <span class="badge bg-success" style="color: white;">Active</span>
+                          </td>
+                          <td>
+                            <a href="#">
+                              <i class='bx bx-star fs-5' ></i>
+                            </a>
+                            <a href="#" style="margin-left: 10px;">
+                              <i class='bx bx-trash fs-5'></i>
+                            </a>
+                            <a href="#" style="margin-left: 10px;">
+                              <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr role="row" class="text-center">
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center user-name">
+                              <div class="avatar-wrapper">
+                                <div class="avatar me-3">
+                                  <img src="../assets/images/dog.jpg" alt="Avatar" class="rounded-circles">
+                                </div>
+                              </div>
+                              <div class="d-flex flex-column text-center">
+                                <a href="#" class="text-body text-truncate">
+                                  <span class="fw-medium text">Michael Anderson</span>
+                                </a>
+                                <small class="text-muted">michael.anderson@example.com</small>
+                              </div>
+                            </div>
+                          </td>
+                          
+                          <td>123</td>
+                          <td class="text-center">
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                              <i class="bx bx-face" style="color: white; padding: 5px; background-color: #389e88; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;"></i>
+                              <span style="margin-left: 10px;">User</span>
+                            </div>
+                          </td>  
+                          <td>08993694969</td>
+                          <td>21-02-2312</td>
+                          <td>
+                            <span class="badge bg-success" style="color: white;">Active</span>
+                          </td>
+                          <td>
+                            <a href="#">
+                              <i class='bx bx-star fs-5' ></i>
+                            </a>
+                            <a href="#" style="margin-left: 10px;">
+                              <i class='bx bx-trash fs-5'></i>
+                            </a>
+                            <a href="#" style="margin-left: 10px;">
+                              <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr role="row" class="text-center">
+                            <td>
+                              <div class="d-flex justify-content-start align-items-center user-name">
+                                <div class="avatar-wrapper">
+                                  <div class="avatar me-3">
+                                    <img src="../assets/images/dog.jpg" alt="Avatar" class="rounded-circles">
+                                  </div>
+                                </div>
+                                <div class="d-flex flex-column text-center">
+                                  <a href="#" class="text-body text-truncate">
+                                    <span class="fw-medium">Emma Martin</span>
+                                  </a>
+                                  <small class="text-muted">emma.martin@example.com</small>
+                                </div>
+                              </div>
+                            </td>
+                          
+                            <td>123</td>
+                            <td class="text-center">
+                              <div style="display: flex; align-items: center; justify-content: center;">
+                                <i class="bx bx-face" style="color: white; padding: 5px; background-color: #389e88; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;"></i>
+                                <span style="margin-left: 10px;">User</span>
+                              </div>
+                            </td>  
+                            <td>08993694969</td>
+                            <td>21-02-2312</td>
+                            <td>
+                              <span class="badge bg-success" style="color: white;">Active</span>
+                            </td>
+                            <td>
+                              <a href="#">
+                                <i class='bx bx-star fs-5' ></i>
+                              </a>
+                              <a href="#" style="margin-left: 10px;">
+                                <i class='bx bx-trash fs-5'></i>
+                              </a>
+                              <a href="#" style="margin-left: 10px;">
+                                <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                              </a>
+                            </td>
+                        </tr>
+
+                        <tr role="row" class="text-center">
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center user-name">
+                              <div class = "avatar-wrapper">
+                                <div class="avatar me-3">
+                                  <img src="../assets/images/dog.jpg" alt="Avatar" class="rounded-circles">
+                                </div>
+                              </div>
+                              <div class="d-flex flex-column text-center">
+                                <a href="#" class="text-body text-truncate">
+                                  <span class="fw-medium">James Brown</span>
+                                </a>
+                                <small class="text-muted">james.brown@example.com</small>
+                              </div>
+                            </div>
+                          </td>
+                          
+                          <td>123</td>
+                          <td class="text-center">
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                              <i class="bx bxs-face-mask" style="color: white; padding: 5px; background-color: #9e388d; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;"></i>
+                              <span style="margin-left: 10px;">Admin</span>
+                            </div>
+                          </td>  
+                          <td>08993694969</td>
+                          <td>21-02-2312</td>
+                          <td>
+                            <span class="badge bg-success" style="color: white;">Active</span>
+                          </td>
+                          <td>
+                            <a href="#">
+                              <i class='bx bx-star fs-5' ></i>
+                            </a>
+                            <a href="#" style="margin-left: 10px;">
+                              <i class='bx bx-trash fs-5'></i>
+                            </a>
+                            <a href="#" style="margin-left: 10px;">
+                              <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr role="row" class="text-center">
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center user-name">
+                              <div class="avatar-wrapper">
+                                <div class="avatar me-3 ">
+                                  <img src="../assets/images/dog.jpg" alt="Avatar" class="rounded-circles">
+                                </div>
+                              </div>
+                              <div class="d-flex flex-column text-center">
+                                <a href="#" class="text-body text-truncate">
+                                  <span class="fw-medium">Olivia Taylor</span>
+                                </a>
+                                <small class="text-muted">olivia.taylor@example.com</small>
+                              </div>
+                            </div>
+                          </td>
+                          
+                            <td>123</td>
+                            <td class="text-center">
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                              <i class="bx bxs-face-mask" style="color: white; padding: 5px; background-color: #9e388d; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;"></i>
+                              <span style="margin-left: 10px;">Admin</span>
+                            </div>
+                          </td>  
+                            <td>08993694969</td>
+                            <td>21-02-2312</td>
+                            <td>
+                              <span class="badge bg-danger" style="color: white;">Inactive</span>
+                            </td>
+                            <td>
+                              <a href="#">
+                                <i class='bx bx-star fs-5' ></i>
+                              </a>
+                              <a href="#" style="margin-left: 10px;">
+                                <i class='bx bx-trash fs-5'></i>
+                              </a>
+                              <a href="#" style="margin-left: 10px;">
+                                <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                              </a>
+                            </td>
+                        </tr>
+                        
+                        <tr role="row" class="text-center">
+                          <td>
+                            <div class="d-flex justify-content-start align-items-center user-name">
+                              <div class="avatar-wrapper">
+                                <div class="avatar me-3">
+                                  <img src="../assets/images/dog.jpg" alt="Avatar" class="rounded-circles">
+                                </div>
+                              </div>
+                              <div class="d-flex flex-column">
+                                <a href="#" class="text-body text-truncate">
+                                  <span class="fw-medium">William Harris</span>
+                                </a>
+                                <small class = "text-muted">william.harris@example.com</small>
+                              </div>
+                            </div>
+                          </td>
+                          
+                          <td>123</td>
+                          <td class="text-center">
+                            <div style="display: flex; align-items: center; justify-content: center;">
+                              <i class="bx bx-face" style="color: white; padding: 5px; background-color: #389e88; border-radius: 50%; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;"></i>
+                              <span style="margin-left: 10px;">User</span>
+                            </div>
+                          </td>  
+                          <td>08993694969</td>
+                          <td>21-02-2312</td>
+                          <td>
+                            <span class="badge bg-success" style="color: white;">Active</span>
+                          </td>
+                          <td>
+                            <a href="#">
+                              <i class='bx bx-star fs-5' ></i>
+                            </a>
+                            <a href="#" style="margin-left: 10px;">
+                              <i class='bx bx-trash fs-5'></i>
+                            </a>
+                            <a href="#" style="margin-left: 10px;">
+                              <i class='bx bx-dots-vertical-rounded fs-5'></i>
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            
+              
         </main>
 
         <!--========== Script ==========-->

@@ -162,7 +162,7 @@
                             </label>
                           </div>
                           <div>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pesanModal">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addUser">
                               <i class='bx bxs-add-to-queue ' ></i>&nbsp;&nbsp; Add User
                             </button>
                           </div>
@@ -611,24 +611,35 @@
         </main>
 
         <!-- Modal -->
-        <div class="modal fade" id="pesanModal" tabindex="-1" role="dialog" aria-labelledby="pesanModalLabel" aria-hidden="true">
+        <div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="addUserLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="pesanModalLabel">New message</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+              <div class="modal-header bg-primary">
+                <h5 class="modal-title text-white" id="addUserLabel">Add User</h5>
+                <button type="button" data-dismiss="modal" class="btn-close fs-6" aria-label="Close"></button>
               </div>
+            
               <div class="modal-body">
                 <form>
                   <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                    <label for="Username-name" class="col-form-label">Username:</label>
+                    <input type="text" class="form-control" id="Username-name">
                   </div>
                   <div class="form-group">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+                    <label for="Email-name" class="col-form-label">Email:</label>
+                    <input type="email" class="form-control" id="Email-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="Roles-name" class="col-form-label">Roles:</label>
+                    <input type="text" class="form-control" id="Roles-name">
+                  </div>
+                  <div class="form-group">
+                    <label for="Telepon" class="col-form-label">Telepon:</label>
+                    <input type="text" class="form-control" id="Telepon">
+                  </div>
+                  <div class="form-group">
+                    <label for="Password" class="col-form-label">Password:</label>
+                    <input type="password" class="form-control" id="Password">
                   </div>
                 </form>
               </div>
